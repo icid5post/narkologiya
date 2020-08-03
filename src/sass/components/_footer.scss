@@ -1,0 +1,145 @@
+.main-footer{
+  padding: 40px 0 20px 0;
+  background-image: url('../img/footer-bg.jpg');
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
+}
+
+.ft-title{
+  font-size: rem(12px);
+}
+
+.ft-logo{
+  display: flex;
+  align-items: center;
+  &_img{
+    flex: 0 0 auto;
+    max-width: 130px;
+    img{
+      max-width: 100%;
+    }
+  }
+
+  &__desc{
+    padding-left: 10px;
+    font-size: rem(11px);
+  }
+
+  @media (max-width: $smDesktopWidth) {
+    margin-bottom: 20px;
+  }
+
+}
+
+
+
+.soc-list-item{
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  border: 2px solid #FFFFFF;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5px;
+  text-decoration: none!important;
+  color: #fff;
+  transition: all ease 0.3s;
+  svg{
+    width: 22px;
+  }
+  /*
+  &.facebook{
+    color: #3B5998;
+    fill: #3B5998;
+  }
+  &.youtube{
+    color: #FF0000;
+    fill: #FF0000;
+  }
+  &.twitter{
+    color: #03A9F4;
+    fill: #03A9F4;
+  }
+  */
+
+  &:hover{
+    color: #fff;
+    border-color: var(--primary-color);
+    background-color: var(--primary-color);
+  }
+}
+
+@media (max-width: $smDesktopWidth) {
+  .soc-list{
+    margin-bottom: 20px;
+  }
+
+}
+
+.ft-contact{
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  &__icon{
+    width: 40px;
+    height: 40px;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    flex: 0 0 auto;
+    align-items: center;
+    justify-content: center;
+    svg{
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  &__title{
+    color: #fff;
+    text-decoration: none!important;
+    padding-left: 15px;
+    &:hover{
+      color: #fff;
+    }
+  }
+}
+
+.cnt{
+  margin-right: 10px;
+}
+
+@media (min-width: $smDesktopWidth) {
+  .copy-row{
+    margin-top: 30px;
+  }
+  .cnt{
+    margin-right: 40px;
+  }
+}
+
+
+.dev{
+  display: flex;
+  align-items: center;
+  &__title{
+    color: #fff!important;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: $smDesktopWidth) {
+  .copyright{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .dev{
+    justify-content: center;
+    margin-top: 15px;
+  }
+}

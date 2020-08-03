@@ -1,0 +1,1143 @@
+<!doctype html>
+<html lang="ru-RU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+    <title>Главная страница</title>
+    <link rel="stylesheet" type="text/css" href="css/libs/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/libs/libs.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="visually/css/bvi-theme.css">
+</head>
+<body>
+
+<!--Page wrapper start-->
+<div id="wrapper" class="main-page">
+    <!--   Main header start-->
+    <header class="main-header is-home">
+        <!--  header top navbar start-->
+        <div class="header-top-line">
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <div class="col-lg-6 col-9 d-flex align-items-center order-1 order-lg-0">
+
+
+                            <div class="ml-auto ml-lg-0 tech-btn-group hd-m-r">
+                                <a href="#" class="tech-btn">
+                                    <i data-feather="home"></i>
+                                </a>
+                                <a href="#" class="tech-btn" data-toggle="modal" data-target="#searchModal">
+                                    <i data-feather="search"></i>
+                                </a>
+                            </div>
+
+                            <div class="tech-btn-group">
+                                <div class="dropdown visual-dropdown">
+                                    <a href="#" class="tech-btn"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i data-feather="eye"></i>
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <div class="bvi-container">
+                                            <div class="no-propagation">
+                                                <h4 class="bvi-container__title">
+                                                    Вид сайта
+                                                </h4>
+
+                                                <ul class="special-mode-actions">
+                                                    <li class="special-mode-actions__item">
+                                                        <button class="mode-action-item mode-action-item_default mode-action-init" id="mode-default" data-toggle="tooltip" data-placement="bottom" title="Обычная версия">
+                                                            A
+                                                        </button>
+                                                    </li>
+                                                    <li class="special-mode-actions__item">
+                                                        <button class="mode-action-item mode-action-item_whiteBlack" id="mode-whiteBlack" data-toggle="tooltip" data-placement="bottom" title="Тёмно белая">
+                                                            A
+                                                        </button>
+                                                    </li>
+                                                    <li class="special-mode-actions__item">
+                                                        <button class="mode-action-item mode-action-item_dark" id="mode-dark" data-toggle="tooltip" data-placement="bottom" title="Тёмная версия">
+                                                            A
+                                                        </button>
+                                                    </li>
+                                                </ul>
+
+                                                <h4 class="dropdown-title">  <?php pll_e('Размер шрифта'); ?></h4>
+                                                <div class="appearance">
+                                                    <div class="appearance__title">Увеличить на <span class="fontRange">0</span>%</div>
+                                                    <div id="fontSizer" class="defaultSlider ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min" style="width: 0%;"></div><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 0%;"></span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <a href="#" class="tech-btn d-none d-lg-flex">
+                                    <i data-feather="smartphone"></i>
+                                </a>
+                                <a href="#" class="tech-btn"  id="speechToggle" title="Голосовой помощник включён">
+                                    <i data-feather="volume-2"></i>
+                                </a>
+                            </div>
+
+                    </div>
+
+                    <div class="col-lg-6 col-3 d-flex align-items-center justify-content-end">
+
+                            <a href="#" class="tech-btn d-flex d-lg-none sideout-toggle mr-auto">
+                                <i data-feather="menu"></i>
+                            </a>
+
+                            <div class="tech-btn-group hd-m-r d-none d-lg-flex">
+                                <a href="#" class="tech-btn">
+                                    Uz
+                                </a>
+                                <a href="#" class="tech-btn">
+                                    Ru
+                                </a>
+                                <a href="#" class="tech-btn">
+                                    En
+                                </a>
+                            </div>
+
+                            <a href="#" class="btn btn-default font-bold d-none d-lg-flex"
+                               data-toggle="modal"
+                               data-target="#siteMapModal"
+                            >
+                                <i data-feather="list" class="mr-2"></i>
+                                Карта сайта
+                            </a>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--        header top navbar end-->
+        <div class="main-header__content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <a href="#" class="header-logo">
+                            <div class="header-logo__img">
+                                <img src="./img/Gerb.png" alt="">
+                            </div>
+                            <span class="header-logo__content">
+                                НАЦИОНАЛЬНЫЙ ИНФОРМАЦИОННО-АНАЛИТИЧЕСКИЙ ЦЕНТР <br>
+                                ПО КОНТРОЛЮ ЗА НАРКОТИКАМИ ПРИ КАБИНЕТЕ МИНИСТРОВ <br>
+                                РЕСПУБЛИКИ УЗБЕКИСТАН
+                            </span>
+                        </a>
+                    </div>
+                    <div class="col-md-5 d-none d-md-flex justify-content-md-end">
+                        <div class="header-phone">
+                            <div class="header-phone__icon">
+                                <i data-feather="phone-call"></i>
+                            </div>
+                            <div class="header-phone__content phone-content">
+                                <a href="tel:" class="phone-content__phone">
+                                    (+998 71) 239-10-63 <br>
+                                    <span>
+                                        Телефон
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--        Header navbar start-->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav main-navbar">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                О Центре
+                            </a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Руководство</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Подразделения</a></li>
+                                    <li><a class="dropdown-item" href="#">Вакансии</a></li>
+                                    <li><a class="dropdown-item" href="#">Виртуальная приёмная</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Деятельность
+                            </a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Руководство</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Подразделения</a></li>
+                                    <li><a class="dropdown-item" href="#">Вакансии</a></li>
+                                    <li><a class="dropdown-item" href="#">Виртуальная приёмная</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Государственная комиссия
+                            </a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Руководство</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Подразделения</a></li>
+                                    <li><a class="dropdown-item" href="#">Вакансии</a></li>
+                                    <li><a class="dropdown-item" href="#">Виртуальная приёмная</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Интерактивные услуги
+                            </a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Руководство</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Подразделения</a></li>
+                                    <li><a class="dropdown-item" href="#">Вакансии</a></li>
+                                    <li><a class="dropdown-item" href="#">Виртуальная приёмная</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Пресс-центр
+                            </a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Руководство</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Подразделения</a></li>
+                                    <li><a class="dropdown-item" href="#">Вакансии</a></li>
+                                    <li><a class="dropdown-item" href="#">Виртуальная приёмная</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Нормативные документы
+                            </a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Руководство</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Подразделения</a></li>
+                                    <li><a class="dropdown-item" href="#">Вакансии</a></li>
+                                    <li><a class="dropdown-item" href="#">Виртуальная приёмная</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+        <!--        Header navbar end-->
+
+    </header>
+    <!--   Main header end-->
+    <!--   Main banner start-->
+    <div class="main-banner owl-carousel">
+        <div class="main-banner__item banner-item" style="background-image: url('./img/banner-item.jpg')">
+            <div class="banner-item__content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <h3 class="banner-item__title">
+                                Месячник «Предупреждение распространения наркомании среди молодежи»
+                            </h3>
+                            <div class="banner-item__desc">
+                                Мероприятие освещалось СМИ, сотрудниками Национального центра по контролю за наркотиками и представителями Союза молодежи Узбекистана даны интервью для местного телевидения.
+                            </div>
+                            <a href="#" class="btn btn-default btn-py-lg">
+                                Подробнее
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-banner__item banner-item" style="background-image: url('./img/banner-item.jpg')">
+            <div class="banner-item__content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <h3 class="banner-item__title">
+                                Месячник «Предупреждение распространения наркомании среди молодежи»
+                            </h3>
+                            <div class="banner-item__desc">
+                                Мероприятие освещалось СМИ, сотрудниками Национального центра по контролю за наркотиками и представителями Союза молодежи Узбекистана даны интервью для местного телевидения.
+                            </div>
+                            <a href="#" class="btn btn-default btn-py-lg">
+                                Подробнее
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-banner__item banner-item" style="background-image: url('./img/banner-item.jpg')">
+            <div class="banner-item__content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <h3 class="banner-item__title">
+                                Месячник «Предупреждение распространения наркомании среди молодежи»
+                            </h3>
+                            <div class="banner-item__desc">
+                                Мероприятие освещалось СМИ, сотрудниками Национального центра по контролю за наркотиками и представителями Союза молодежи Узбекистана даны интервью для местного телевидения.
+                            </div>
+                            <a href="#" class="btn btn-default btn-py-lg">
+                                Подробнее
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--   Main banner end -->
+
+    <section class="main-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="collection-list">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <a href="#" class="collection-item">
+                                    <span class="collection-item__icon">
+                                        <img src="./img/icons/agreement.svg" alt="">
+                                    </span>
+                                    <span class="collection-item__title">
+                                        Международное сотрудничество
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="#" class="collection-item">
+                                    <span class="collection-item__icon">
+                                        <img src="./img/coll-users.png" alt="">
+                                    </span>
+                                    <span class="collection-item__title">
+                                        Обращения граждан
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="#" class="collection-item">
+                                    <span class="collection-item__icon">
+                                        <img src="./img/coll-camera.png" alt="">
+                                    </span>
+                                    <span class="collection-item__title">
+                                       Фотогалерея
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="#" class="collection-item">
+                                    <span class="collection-item__icon">
+                                        <img src="./img/coll-video.png" alt="">
+                                    </span>
+                                    <span class="collection-item__title">
+                                        Видео
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="#" class="collection-item">
+                                    <span class="collection-item__icon">
+                                        <img src="./img/coll-bar-chart.png" alt="">
+                                    </span>
+                                    <span class="collection-item__title">
+                                        Инфографика
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="#" class="collection-item">
+                                    <span class="collection-item__icon">
+                                        <img src="./img/coll-help-circle.png" alt="">
+                                    </span>
+                                    <span class="collection-item__title">
+                                        Опросы
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 d-none d-lg-block">
+                    <div class="aside-banner">
+                        <img src="./img/aside-banner.jpg" alt="">
+                    </div>
+                    <a href="#" class="aside-coll-item">
+                        <div class="aside-coll-item__img">
+                            <img src="./img/mygov-logo.png" alt="">
+                        </div>
+                        <div class="aside-coll-item__title">
+                            Единый портал интерактивных
+                            государственных услуг
+                        </div>
+                    </a>
+                    <a href="#" class="aside-coll-item">
+                        <div class="aside-coll-item__img">
+                            <img src="./img/openData-logo.png" alt="">
+                        </div>
+                        <div class="aside-coll-item__title">
+                            Портал открытых данных Республики Узбекистан
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="main-section">
+        <h2 class="section-title">
+            Новости
+        </h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3 class="sub-title">
+                        <span>Новости Узбекистана</span>
+                    </h3>
+                    <!-- News list start-->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="news-card">
+                                <a href="#" class="news-card__img" style="background-image: url('./img/news1.jpg')">
+
+                                </a>
+                                <div class="news-card__content">
+                                    <div class="news-card__date">
+                                        <i data-feather="calendar"></i> 14.05.2020
+                                    </div>
+                                    <a href="#" class="news-card__title">
+                                        Указ Президента: субъекты хозяйствования будут освобождены от налога на имущество и землю до 1 сентября
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="news-card">
+                                <a href="#" class="news-card__img" style="background-image: url('./img/news1.jpg')">
+
+                                </a>
+                                <div class="news-card__content">
+                                    <div class="news-card__date">
+                                        <i data-feather="calendar"></i> 14.05.2020
+                                    </div>
+                                    <a href="#" class="news-card__title">
+                                        Указ Президента: субъекты хозяйствования будут освобождены от налога на имущество и землю до 1 сентября
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="news-card">
+                                <a href="#" class="news-card__img" style="background-image: url('./img/news1.jpg')">
+
+                                </a>
+                                <div class="news-card__content">
+                                    <div class="news-card__date">
+                                        <i data-feather="calendar"></i> 14.05.2020
+                                    </div>
+                                    <a href="#" class="news-card__title">
+                                        Указ Президента: субъекты хозяйствования будут освобождены от налога на имущество и землю до 1 сентября
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="news-card">
+                                <a href="#" class="news-card__img" style="background-image: url('./img/news1.jpg')">
+
+                                </a>
+                                <div class="news-card__content">
+                                    <div class="news-card__date">
+                                        <i data-feather="calendar"></i> 14.05.2020
+                                    </div>
+                                    <a href="#" class="news-card__title">
+                                        Указ Президента: субъекты хозяйствования будут освобождены от налога на имущество и землю до 1 сентября
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="news-card">
+                                <a href="#" class="news-card__img" style="background-image: url('./img/news1.jpg')">
+
+                                </a>
+                                <div class="news-card__content">
+                                    <div class="news-card__date">
+                                        <i data-feather="calendar"></i> 14.05.2020
+                                    </div>
+                                    <a href="#" class="news-card__title">
+                                        Указ Президента: субъекты хозяйствования будут освобождены от налога на имущество и землю до 1 сентября
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="news-card">
+                                <a href="#" class="news-card__img" style="background-image: url('./img/news1.jpg')">
+
+                                </a>
+                                <div class="news-card__content">
+                                    <div class="news-card__date">
+                                        <i data-feather="calendar"></i> 14.05.2020
+                                    </div>
+                                    <a href="#" class="news-card__title">
+                                        Указ Президента: субъекты хозяйствования будут освобождены от налога на имущество и землю до 1 сентября
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- News list End-->
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="sub-title">
+                        <span>Новости Центра</span>
+                    </h3>
+                    <div class="news-slider owl-carousel">
+                        <div class="news-slider-item">
+                            <div class="news-slider-item__date">
+                                <i data-feather="calendar"></i> 14.05.2020
+                            </div>
+                            <a href="#" class="news-slider-item__img" style="background-image: url('./img/news-slider1.jpg')">
+                            </a>
+                            <div class="news-slider-item__content">
+                                <a href="#" class="news-slider-item__title">
+                                    Об участии в 63-й сессии Комиссии ООН по наркотическим средствам
+                                </a>
+                                <div class="news-slider-item__desc">
+                                    Указ Президента: субъекты хозяйствования будут освобождены от налога на имущество и землю до 1 сентября ...
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news-slider-item">
+                            <div class="news-slider-item__date">
+                                <i data-feather="calendar"></i> 14.05.2020
+                            </div>
+                            <a href="#" class="news-slider-item__img" style="background-image: url('./img/news-slider1.jpg')">
+                            </a>
+                            <div class="news-slider-item__content">
+                                <a href="#" class="news-slider-item__title">
+                                    Об участии в 63-й сессии Комиссии ООН по наркотическим средствам
+                                </a>
+                                <div class="news-slider-item__desc">
+                                    Указ Президента: субъекты хозяйствования будут освобождены от налога на имущество и землю до 1 сентября ...
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="sub-title">
+                        <span>Международные встречи и мероприятия</span>
+                    </h3>
+                    <div class="news-slider owl-carousel">
+                        <div class="news-slider-item">
+                            <div class="news-slider-item__date">
+                                <i data-feather="calendar"></i> 14.05.2020
+                            </div>
+                            <a href="#" class="news-slider-item__img" style="background-image: url('./img/news-slider2.jpg')">
+                            </a>
+                            <div class="news-slider-item__content">
+                                <a href="#" class="news-slider-item__title">
+                                    Об участии в 63-й сессии Комиссии ООН по наркотическим средствам
+                                </a>
+                                <div class="news-slider-item__desc">
+                                    Указ Президента: субъекты хозяйствования будут освобождены от налога на имущество и землю до 1 сентября ...
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news-slider-item">
+                            <div class="news-slider-item__date">
+                                <i data-feather="calendar"></i> 14.05.2020
+                            </div>
+                            <a href="#" class="news-slider-item__img" style="background-image: url('./img/news-slider1.jpg')">
+                            </a>
+                            <div class="news-slider-item__content">
+                                <a href="#" class="news-slider-item__title">
+                                    Об участии в 63-й сессии Комиссии ООН по наркотическим средствам
+                                </a>
+                                <div class="news-slider-item__desc">
+                                    Указ Президента: субъекты хозяйствования будут освобождены от налога на имущество и землю до 1 сентября ...
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="aside-subscribe">
+                        <div class="aside-subscribe__title">ПОДПИСКА НА НОВОСТИ</div>
+                        <form action="#" class="subscribe-form">
+                            <input type="text" class="mat-input">
+                            <button class="btn btn-over ml-2">Подписаться</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="main-section">
+        <div class="container">
+            <h2 class="sub-title">
+                <span>Профилатика</span>
+            </h2>
+            <div class="news-section-slider owl-carousel">
+                <div class="news-card">
+                    <a href="#" class="news-card__img" style="background-image: url('./img/news1.jpg')">
+
+                    </a>
+                    <div class="news-card__content">
+                        <div class="news-card__date">
+                            <i data-feather="calendar"></i> 14.05.2020
+                        </div>
+                        <a href="#" class="news-card__title">
+                            Указ Президента: субъекты хозяйствования будут освобождены от налога на имущество и землю до 1 сентября
+                        </a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <a href="#" class="news-card__img" style="background-image: url('./img/news1.jpg')">
+                    </a>
+                    <div class="news-card__content">
+                        <div class="news-card__date">
+                            <i data-feather="calendar"></i> 14.05.2020
+                        </div>
+                        <a href="#" class="news-card__title">
+                            Указ Президента: субъекты хозяйствования будут освобождены от налога на имущество и землю до 1 сентября
+                        </a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <a href="#" class="news-card__img" style="background-image: url('./img/news1.jpg')">
+                    </a>
+                    <div class="news-card__content">
+                        <div class="news-card__date">
+                            <i data-feather="calendar"></i> 14.05.2020
+                        </div>
+                        <a href="#" class="news-card__title">
+                            Указ Президента: субъекты хозяйствования будут освобождены от налога на имущество и землю до 1 сентября
+                        </a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <a href="#" class="news-card__img" style="background-image: url('./img/news1.jpg')">
+                    </a>
+                    <div class="news-card__content">
+                        <div class="news-card__date">
+                            <i data-feather="calendar"></i> 14.05.2020
+                        </div>
+                        <a href="#" class="news-card__title">
+                            Указ Президента: субъекты хозяйствования будут освобождены от налога на имущество и землю до 1 сентября
+                        </a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <a href="#" class="news-card__img" style="background-image: url('./img/news1.jpg')">
+                    </a>
+                    <div class="news-card__content">
+                        <div class="news-card__date">
+                            <i data-feather="calendar"></i> 14.05.2020
+                        </div>
+                        <a href="#" class="news-card__title">
+                            Указ Президента: субъекты хозяйствования будут освобождены от налога на имущество и землю до 1 сентября
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="#" class="btn btn-primary btn-round">Cмотреть все</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-section" style="background-image: url('./img/bg-section-list.jpg')">
+        <div class="container">
+            <h2 class="sub-title mb-4">
+                <span>Противодействие незаконному обороту наркотических средств</span>
+            </h2>
+            <div class="row">
+                <div class="col-lg-3 d-lg-flex col-md-6">
+                    <a href="#" class="res-card">
+                        <div class="res-card__img">
+                            <img src="./img/res-logo1.png" alt="">
+                        </div>
+                        <div class="res-card__title">
+                            Информация
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 d-lg-flex col-md-6">
+                    <a href="#" class="res-card">
+                        <div class="res-card__img">
+                            <img src="./img/res-logo2.png" alt="">
+                        </div>
+                        <div class="res-card__title">
+                            Аналитический обзор
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 d-lg-flex col-md-6">
+                    <a href="#" class="res-card">
+                        <div class="res-card__img">
+                            <img src="./img/res-logo3.png" alt="">
+                        </div>
+                        <div class="res-card__title">
+                            Статистика
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 d-lg-flex col-md-6">
+                    <a href="#" class="res-card">
+                        <div class="res-card__img">
+                            <img src="./img/res-logo3.png" alt="">
+                        </div>
+                        <div class="res-card__title">
+                            Деятельность правоохранительных органов
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="main-section" style="background-image: url('./img/section-bg-gall.jpg')">
+        <div class="container">
+            <div class="row gallery-list">
+                <div class="col-lg-6">
+                    <h2 class="sub-title">
+                        <span>Видеогалерея</span>
+                    </h2>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div  class="gall-item gall-item_full">
+                                <a href="https://www.youtube.com/watch?v=0llVVMBFWBU" class="gall-img">
+                                    <div class="gall-item__img" style="background-image: url('./img/gallery-1.jpg')">
+                                    </div>
+                                    <div class="gall-icon">
+                                        <i data-feather="play"></i>
+                                    </div>
+                                    <div class="gall-img__content">
+                                        Указ Президента: субъекты хозяйствования будут освобождены от налога на имущество и землю до 1 сентября
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="gall-item gall-item-select">
+                                <a href="https://www.youtube.com/watch?v=0llVVMBFWBU" class="gall-img">
+                                    <div class="gall-item__img" style="background-image: url('./img/gallery-1.jpg')">
+                                    </div>
+                                    <div class="gall-icon">
+                                        <i data-feather="play"></i>
+                                    </div>
+                                </a>
+                                <div class="gall-item__content">
+                                    Указ Президента: субъекты хозяйствования будут освобождены от налога на имущество и землю до 1 сентябряУказ Президента: субъекты хозяйствования будут освобожден
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="gall-item gall-item-select">
+                                <a href="https://www.youtube.com/watch?v=0llVVMBFWBU" class="gall-img">
+                                    <div class="gall-item__img" style="background-image: url('./img/news-slider1.jpg')">
+                                    </div>
+                                    <div class="gall-icon">
+                                        <i data-feather="play"></i>
+                                    </div>
+                                </a>
+                                <div class="gall-item__content">
+                                    Указ Президента: субъекты хозяйствования будут освобождены от налога на имущество и землю до 1 сентябряУказ Президента: субъекты хозяйствования будут освобожден
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="sub-title">
+                        <span>Фотогалерея</span>
+                    </h2>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div  class="gall-item gall-item_full">
+                                <a href="https://www.youtube.com/watch?v=0llVVMBFWBU" class="gall-img">
+                                    <div class="gall-item__img" style="background-image: url('./img/news-slider2.jpg')">
+                                    </div>
+                                    <div class="gall-icon">
+                                        <i data-feather="camera"></i>
+                                    </div>
+                                    <div class="gall-img__content">
+                                        Указ Президента: субъекты хозяйствования будут освобождены от налога на имущество и землю до 1 сентября
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="gall-item gall-item-select">
+                                <a href="https://www.youtube.com/watch?v=0llVVMBFWBU" class="gall-img">
+                                    <div class="gall-item__img" style="background-image: url('./img/news-slider1.jpg')">
+                                    </div>
+                                    <div class="gall-icon">
+                                        <i data-feather="camera"></i>
+                                    </div>
+                                </a>
+                                <div class="gall-item__content">
+                                    Указ Президента: субъекты хозяйствования будут освобождены от налога на имущество и землю до 1 сентябряУказ Президента: субъекты хозяйствования будут освобожден
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="gall-item gall-item-select">
+                                <a href="https://www.youtube.com/watch?v=0llVVMBFWBU" class="gall-img">
+                                    <div class="gall-item__img" style="background-image: url('./img/news-slider1.jpg')">
+                                    </div>
+                                    <div class="gall-icon">
+                                        <i data-feather="camera"></i>
+                                    </div>
+                                </a>
+                                <div class="gall-item__content">
+                                    Указ Президента: субъекты хозяйствования будут освобождены от налога на имущество и землю до 1 сентябряУказ Президента: субъекты хозяйствования будут освобожден
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="main-section">
+        <div class="container">
+            <h2 class="section-title">
+                Полезные ссылки
+            </h2>
+            <div class="partners-slider owl-carousel nav-center">
+                <a href="#"  target="_blank" class="partner">
+                    <div class="partner__logo">
+                        <img src="./img/partner1.png" alt="">
+                    </div>
+                    <span class="partner__title">
+                        Официальный сайт Президента
+                    </span>
+                </a>
+                <a href="#"  target="_blank" class="partner">
+                    <div class="partner__logo">
+                        <img src="./img/partner2.png" alt="">
+                    </div>
+                    <span class="partner__title">
+                        Официальный сайт Президента
+                    </span>
+                </a>
+                <a href="#"  target="_blank" class="partner">
+                    <div class="partner__logo">
+                        <img src="./img/partner3.png" alt="">
+                    </div>
+                    <span class="partner__title">
+                        Официальный сайт Президента
+                    </span>
+                </a>
+                <a href="#"  target="_blank" class="partner">
+                    <div class="partner__logo">
+                        <img src="./img/partner1.png" alt="">
+                    </div>
+                    <span class="partner__title">
+                        Официальный сайт Президента
+                    </span>
+                </a>
+                <a href="#"  target="_blank" class="partner">
+                    <div class="partner__logo">
+                        <img src="./img/partner1.png" alt="">
+                    </div>
+                    <span class="partner__title">
+                        Официальный сайт Президента
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <div class="ft-title mb-3">
+                        НАЦИОНАЛЬНЫЙ ИНФОРМАЦИОННО-АНАЛИТИЧЕСКИЙ ЦЕНТР
+                        ПО КОНТРОЛЮ ЗА НАРКОТИКАМИ ПРИ КАБИНЕТЕ МИНИСТРОВ
+                        РЕСПУБЛИКИ УЗБЕКИСТАН
+                    </div>
+                    <div class="ft-logo">
+                        <div class="ft-logo_img">
+                            <img src="./img/OSCE_logo-ru.png" alt="">
+                        </div>
+                        <div class="ft-logo__desc">
+                            Данная версия веб-сайта разработана при содействии Координатора проектов ОБСЕ в Узбекистане
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="soc-list d-flex justify-content-center">
+                        <a href="#" class="soc-list-item facebook">
+                            <i data-feather="facebook"></i>
+                        </a>
+                        <a href="#" class="soc-list-item youtube">
+                            <i data-feather="youtube"></i>
+                        </a>
+                        <a href="#" class="soc-list-item twitter">
+                            <i data-feather="twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="ft-contacts">
+                        <div class="ft-contact">
+                            <div class="ft-contact__icon">
+                                <i data-feather="map-pin"></i>
+                            </div>
+                            <div class="ft-contact__title">
+                                Узбекистан, г.Ташкент, 100000, площадь Мустакиллик 5
+                            </div>
+                        </div>
+                        <div class="ft-contact">
+                            <div class="ft-contact__icon">
+                                <i data-feather="phone-call"></i>
+                            </div>
+                            <a href="tel:+998712391063" class="ft-contact__title">
+                                (+998 71) 239-10-63
+                            </a>
+                        </div>
+                        <div class="ft-contact">
+                            <div class="ft-contact__icon">
+                                <i data-feather="mail"></i>
+                            </div>
+                            <a href="mailto:ncdc@uznet.net" class="ft-contact__title">
+                                ncdc@uznet.net
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row copy-row align-items-center">
+                <div class="col-md-6">
+                    <div class="copyright">
+                        © 2018-2020. Все права защищены
+                    </div>
+                </div>
+                <div class="col-md-6 d-md-flex justify-content-md-end">
+                    <div class="cnt d-none d-lg-block">
+                        <img src="./img/cnt.png" alt="">
+                    </div>
+
+                    <div class="dev">
+                        <div class="dev__title">
+                            Создатель сайта:
+                        </div>
+                        <a href="#" class="dev__logo">
+                            <img src="./img/ft-TechnoCorp_Logo.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</div>
+<!--Page wrapper end-->
+
+<!--Site map Modal-->
+<div class="modal fade" id="siteMapModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="container">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Карта сайта</h5>
+                </div>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i data-feather="x"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ul class="site-map-list">
+                                <li>
+                                    <a href="#">Главная</a>
+                                </li>
+                                <li>
+                                    <a href="#">О Центре</a>
+                                    <ul>
+                                        <li><a href="">О Нас</a></li>
+                                        <li><a href="">Структура</a></li>
+                                        <li><a href="">Контакты</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">О Центре</a>
+                                    <ul>
+                                        <li><a href="">О Нас</a></li>
+                                        <li><a href="">Структура</a></li>
+                                        <li><a href="">Контакты</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">О Центре</a>
+                                    <ul>
+                                        <li><a href="">О Нас</a></li>
+                                        <li><a href="">Структура</a></li>
+                                        <li><a href="">Контакты</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!--Site map Modal end-->
+
+<!--Search block-->
+<div class="modal fade search-modal" id="searchModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="#" class="search-form">
+                    <input type="text" class="form-control" placeholder="Поиск">
+                    <button class="search-action">
+                        <i data-feather="search"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Mobile sidebar menu-->
+<nav id="sidebarMenu" class="slideout-menu">
+
+    <div class="tech-btn-group py-4 justify-content-center">
+        <a href="#" class="tech-btn">
+            Uz
+        </a>
+        <a href="#" class="tech-btn">
+            Ru
+        </a>
+        <a href="#" class="tech-btn">
+            En
+        </a>
+    </div>
+
+    <ul class="slideout-menu-list">
+        <li>
+            <span class="slideout-menu-title">О Центре</span>
+            <ul class="slideout-menu-sub">
+                <li><a href="#">История</a></li>
+                <li><a href="#">Структура</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Руководство</a></li>
+            </ul>
+        </li>
+        <li>
+            <span class="slideout-menu-title">Деятельность </span>
+            <ul class="slideout-menu-sub">
+                <li><a href="#">История</a></li>
+                <li><a href="#">Структура</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Руководство</a></li>
+            </ul>
+        </li>
+        <li>
+            <span class="slideout-menu-title">Государственная комиссия  </span>
+            <ul class="slideout-menu-sub">
+                <li><a href="#">История</a></li>
+                <li><a href="#">Структура</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Руководство</a></li>
+            </ul>
+        </li>
+        <li>
+            <span class="slideout-menu-title">Интерактивные услуги </span>
+            <ul class="slideout-menu-sub">
+                <li><a href="#">История</a></li>
+                <li><a href="#">Структура</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Руководство</a></li>
+            </ul>
+        </li>
+        <li>
+            <span class="slideout-menu-title">Нормативные документы </span>
+            <ul class="slideout-menu-sub">
+                <li><a href="#">История</a></li>
+                <li><a href="#">Структура</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Руководство</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#" class="slideout-menu-title">Контакты</a>
+        </li>
+    </ul>
+</nav>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/feather.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/libs.js"></script>
+
+<!--Special version -->
+<script src="./visually/js/jquery.cookie.js"></script>
+<script src="./visually/js/mousetrap.min.js"></script>
+<script src="./visually/js/narrator.js"></script>
+<script src="./visually/js/responsivevoice.min.js"></script>
+<script src="./visually/js/specialVersion.js"></script>
+
+<script src="js/main.js"></script>
+<script>
+    feather.replace()
+</script>
+</body>
+</html>

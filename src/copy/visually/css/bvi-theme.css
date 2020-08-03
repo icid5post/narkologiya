@@ -1,0 +1,120 @@
+/*
+WHITE-DARK
+ */
+.narratorBox{
+    position: relative;
+    background-color: rgba(87, 235, 123, 0.21);
+}
+
+.loading-text{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    right: 10px;
+    top: -30px;
+    background-color: #45a57d!important;
+    border-radius: 50%;
+    animation: pulse-shadow 2s infinite;
+    transition: all ease 0.3s;
+    color: #fff!important;
+}
+
+.loading-text:hover{
+    animation: none;
+    background-color: #45a57d;
+}
+
+.blackAndWhite {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+/*
+DARK
+ */
+
+
+.blackAndWhiteInvert,
+.blackAndWhiteInvert img,
+.blackAndWhiteInvert embed, .blackAndWhiteInvert video {
+    -webkit-filter: grayscale(100%) invert(100%);
+    -moz-filter: grayscale(100%) invert(100%);
+    -ms-filter: grayscale(100%) invert(100%);
+    -o-filter: grayscale(100%) invert(100%);
+    filter: grayscale(100%) invert(100%);
+}
+
+.blackAndWhiteInvert .site-header{
+    box-shadow: none;
+    border-bottom: 1px solid #000;
+}
+
+.blackAndWhiteInvert .portfolio-item:after,
+.blackAndWhiteInvert .breadcrumbs-container,
+.blackAndWhiteInvert .site-footer,
+.blackAndWhiteInvert .news-card .news-card__content:after,
+.blackAndWhiteInvert .main-menu.fixed-menu,
+.blackAndWhiteInvert .main-carousel .cir-carousel-item,
+.blackAndWhiteInvert .main-carousel .cir-carousel-item:after,
+.blackAndWhiteInvert,
+.blackAndWhiteInvert .site-header{
+    background: #fff;
+}
+
+.blackAndWhiteInvert .topNubex{
+    background-color: #000;
+}
+
+.blackAndWhiteInvert .breadcrumbs-list > span, .blackAndWhiteInvert .breadcrumbs-list > span a,
+.blackAndWhiteInvert .portfolio-item,
+.blackAndWhiteInvert .site-footer,
+.blackAndWhiteInvert .news-card .news-card__content,
+.blackAndWhiteInvert .news-card .read-more,
+.blackAndWhiteInvert .main-menu .navbar-nav > li > a,
+.blackAndWhiteInvert .cir-carousel-item__text .title,
+.blackAndWhiteInvert .header-lang-btn,
+.blackAndWhiteInvert .btn-primary,
+.blackAndWhiteInvert .bvi-btn,
+.blackAndWhiteInvert .dropdown-lang-menu .dropdown-item,
+.blackAndWhiteInvert .search-toggle,
+.blackAndWhiteInvert .slide-menu-toggle,
+.blackAndWhiteInvert .site-header{
+    color: #000;
+}
+
+.blackAndWhiteInvert .topNubex{
+    color: #fff;
+}
+
+.blackAndWhiteInvert .bvi-btn,
+.blackAndWhiteInvert .dropdown-menu,
+.blackAndWhiteInvert .header-lang-btn,
+.blackAndWhiteInvert .lang-dropdown{
+    border-color: #000;
+}
+
+
+.blackAndWhiteInvert .special-dropdown:after{
+    border-bottom-color: #000;
+}
+
+.blackAndWhiteInvert .breadcrumbs-container{
+    border-bottom: 1px solid #000;
+}
+
+
+.blackAndWhiteInvert .main-carousel .cir-carousel-item,
+.blackAndWhiteInvert .portfolio-item{
+    background-image: none!important;
+}
+
+.blackAndWhiteInvert #particle-canvas{
+    display: none!important;
+}

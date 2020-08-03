@@ -1,0 +1,109 @@
+
+.list-collapse{
+  background: #FFFFFF;
+  box-shadow: 0px 0px 15px rgba(0, 143, 204, 0.15);
+  border-radius: 10px;
+  margin-bottom: 60px;
+  &__content{
+    padding: 0 30px 0 30px;
+    .list-item:last-child{
+      border-bottom: 0;
+    }
+  }
+}
+
+.list-toggle{
+  color: var(--base-font-color);
+  text-decoration: none!important;
+  display: block;
+  transition: all ease 0.3s;
+  position: relative;
+  font-size: rem(16px);
+  padding: 20px 30px;
+  &:hover{
+    color: var(--kit-primary);
+  }
+
+  &__chevron{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg{
+      width: 22px;
+      height: 22px;
+    }
+  }
+}
+
+.list-item{
+  display: block;
+  padding: 10px 0;
+  border-bottom: 1px solid #F1F1F1;
+  text-decoration: none!important;
+  color: #797979;
+  &:hover{
+    color: var(--kit-primary);
+  }
+}
+
+.ex-card{
+  background: #FFFFFF;
+  box-shadow: 0px 0px 50px rgba(0, 143, 204, 0.2);
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.stat-list{
+  background: #FFFFFF;
+  box-shadow: 0px 0px 15px rgba(0, 143, 204, 0.15);
+  border-radius: 10px;
+  margin-bottom: 40px;
+  &__title{
+    position: relative;
+    padding: 30px 30px;
+    font-size: rem(20px);
+    color: var(--primary-color);
+    border-bottom: 1px solid rgba(0, 143, 204, 0.1);;
+    &:after{
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 27px;
+      width: 2px;
+      background-color: var(--primary-color);
+      height: 30px;
+    }
+  }
+
+  &__content{
+
+    .stat-list-item:nth-child(even){
+      background-color:  rgba(0, 143, 204, 0.05);
+    }
+
+    .stat-list-item:last-child{
+      font-family: var(--bold-font);
+      border-top: 1px solid var(--primary-color);
+      background-color: #fff;
+    }
+
+  }
+
+  @media (max-width: $smTableWidth) {
+    &__title{
+      font-size: rem(16px);
+    }
+  }
+}
+
+.stat-list-item{
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  color: #004968;
+}

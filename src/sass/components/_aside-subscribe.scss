@@ -1,0 +1,25 @@
+.aside-subscribe{
+  background-image: url(../img/subscribe-bg.jpg);
+  padding: 28px 40px;
+  color: #fff;
+  background-size: cover;
+  background-position: center center;
+  &__title{
+    text-transform: uppercase;
+    font-family: var(--bold-font);
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: $smDesktopWidth) {
+    padding: 20px 15px;
+    &__title{
+      font-size: 16px;
+    }
+  }
+}
+
+.subscribe-form{
+  display: flex;
+  align-items: center;
+}

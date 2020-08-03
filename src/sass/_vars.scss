@@ -1,0 +1,63 @@
+/* Vars:
+   ========================================================================== */
+
+
+:root{
+  //fonts
+  --base-font: 'Roboto-Regular', Helvetica, Arial, sans-serif;
+  --bold-font: 'Roboto-Bold', Helvetica, Arial, sans-serif;
+  //colors
+  --base-font-color: #000000;
+  --kit-primary:  #00CC99;
+  --primary-color: #008FCC;
+  //sizes
+  --base-font-size: 14px;
+}
+
+
+// Font
+$mainFont                : 'SegoeUI', Helvetica, Arial, sans-serif;
+$titleFont                : 'SegoeUI-SemiBold', Helvetica, Arial, sans-serif;
+
+// Size
+$mainFontColor           : #101010;
+$mainFontSize            : 14px;
+$mainFontWeight          : 400;
+$mainLineHeight          : 1.2;
+
+$desktopWidth            : 1280px;
+$smDesktopWidth          : 991px;
+$tableWidth              : 767px;
+$smTableWidth            : 640px;
+$phoneWidth              : 480px;
+$smPhoneWidth            : 320px;
+
+/*
+ All colors taken from:
+ https://github.com/vedees/uimini
+*/
+
+// Main color
+$default-color           : #ffffff;
+$primary-color           : #008FCC;
+$success-color           : #26de81;
+$danger-color            : #fc5c65;
+$warning-color           : #fed330;
+$light-color             : #f4f6f9;
+$purple-color            : #8854d0;
+
+// Neutral Color
+$neutral-primary         : #303133;
+$neutral-regular         : #606266;
+$neutral-secondary       : #909399;
+$neutral-placeholder     : #C0C4CC;
+
+// Border Color
+$border-base             : #dee2e6;
+$border-light            : #E4E7ED;
+$border-lighter          : #EBEEF5;
+$border-lightex          : #F2F6FC;
+
+$headerFont        : 'AaarghRegular', Arial, Helvetica, sans-serif;
+$pageFont          : 'AaarghRegular', Arial, Helvetica, sans-serif
+

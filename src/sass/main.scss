@@ -1,0 +1,148 @@
+@import "mixins/index";
+@import "vars";
+@import "theme-style";
+@import "components/base";
+
+/*
+HEADER CSS START
+ */
+@import "components/header";
+/*
+HEADER CSS END
+ */
+
+/*
+MAIN BANNER CSS START
+ */
+@import "components/_main-banner";
+/*
+MAIN BANNER CSS END
+ */
+
+/*
+SIDEBAR CSS START
+ */
+@import "components/sidebar";
+/*
+SIDEBAR CSS END
+ */
+
+/*
+COLLECTIONS LIST CSS START
+ */
+@import "components/_colllection-list";
+/*
+COLLECTIONS LIST END
+ */
+
+/*
+NEWS LIST CSS START
+ */
+@import "components/news";
+/*
+NEWS LIST END
+ */
+
+/*
+CONTENT CSS START
+ */
+@import "components/content";
+/*
+CONTENT END
+ */
+
+/*
+ASIDE SUBSCRIBE CSS START
+ */
+@import "components/aside-subscribe";
+/*
+ASIDE SUBSCRIBE END
+ */
+
+/*
+ASIDE CSS START
+ */
+@import "components/aside";
+/*
+ASIDE END
+ */
+
+/*
+SECTION LIST CSS START
+ */
+@import "components/section-list";
+/*
+SECTION LIST END
+ */
+
+/*
+GALLERY LIST CSS START
+ */
+@import "components/gallery";
+/*
+GALLERY LIST END
+ */
+
+/*
+FOOTER CSS START
+ */
+@import "components/footer";
+/*
+FOOTER LIST END
+ */
+
+/*
+MODALS CSS START
+ */
+@import "components/modals";
+/*
+MODALS LIST END
+ */
+
+/*
+BREDCRUMB CSS START
+ */
+@import "components/bredcrumb";
+/*
+BREDCRUMB LIST END
+ */
+
+/*
+PEOPLE LIST CSS START
+ */
+@import "components/people-list";
+/*
+PEOPLE LIST END
+ */
+
+/*
+SEARCH CSS START
+ */
+@import "components/search";
+/*
+SEARCH END
+ */
+
+/*
+STATISTIC CSS START
+ */
+@import "components/statistic";
+/*
+STATISTIC END
+ */
+
+/*
+visually CSS START
+ */
+@import "components/visual";
+/*
+visually END
+ */
+
+/*
+CHARTS CSS START
+ */
+@import "components/chart";
+/*
+CHARTS CSS  END
+ */

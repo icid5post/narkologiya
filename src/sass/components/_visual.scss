@@ -1,0 +1,85 @@
+
+.bvi-container{
+  padding: 20px 20px;
+  &__title{
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+}
+
+.special-mode-actions{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+.mode-action-item{
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: 0;
+  border-radius: 5px;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  &_default{
+    background-color: var(--kit-primary);
+
+  }
+  &_whiteBlack{
+    background-color: #828282;
+  }
+  &_dark{
+    background-color: #3e3e3e;
+  }
+}
+
+.appearance{
+  width: 170px;
+  &__title{
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+}
+
+#speechToggle{
+  font-size: 16px;
+}
+
+.visual-dropdown {
+  .dropdown-menu{
+    padding: 0;
+  }
+}
+
+@media (max-width: $smDesktopWidth) {
+  .visual-dropdown{
+
+    position: relative;
+
+    .dropdown-menu{
+      left: inherit!important;
+      right: 0!important;
+      transform: translate3d(-0px, 35px, 0px) !important;
+    }
+  }
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active{
+  border-radius: 50%;
+  border: 0;
+  background-color: var(--kit-primary);
+  outline: none!important;
+}
+
+.ui-slider-horizontal {
+  height: 10px;
+}

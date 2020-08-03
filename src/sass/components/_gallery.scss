@@ -1,0 +1,167 @@
+.gall-item{
+  display: block;
+  margin-bottom: 30px;
+  position: relative;
+  > a{
+    display: block;
+    height: 170px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    text-decoration: none!important;
+    position: relative;
+  }
+  &__img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    transition: all ease 0.3s;
+    img{
+      position: absolute;
+      top: 0;
+      left: 0;
+      max-width: 100%;
+      transition: all ease 0.3s;
+    }
+
+    &:after{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(0.23deg, rgba(0, 0, 0, 0.3) 20.6%, rgba(196, 196, 196, 0) 87.4%);
+    }
+  }
+
+  .gall-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    background: rgba(0, 143, 204, 0.2);
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: background-color ease 0.3s;
+    z-index: 10;
+    width: 50px;
+    height: 50px;
+  }
+
+  &__content{
+    padding: 0 10px;
+  }
+
+  &_full{
+    > a{
+      height: 300px;
+      border-radius: 30px;
+    }
+    .gall-img__content{
+      position: absolute;
+      bottom: 0;
+      padding: 30px 30px;
+      color: #fff;
+      z-index: 10;
+      font-family: var(--bold-font);
+      font-size: rem(17px);
+    }
+    .gall-icon{
+      width: 75px;
+      height: 75px;
+      border-width: 3px;
+      svg{
+        width: 30px;
+      }
+    }
+
+  }
+
+  &:hover{
+    .gall-icon{
+      background: rgba(0, 143, 204, 0.5);
+    }
+    .gall-item__img{
+      transform: scale(1.1);
+    }
+  }
+
+  @media (max-width: $smDesktopWidth) {
+    &_full {
+      > a{
+        height: 255px;
+      }
+      .gall-icon{
+        width: 50px;
+        height: 50px;
+        border-width: 3px;
+        top: 40%;
+        svg{
+          width: 25px;
+        }
+      }
+    }
+  }
+}
+
+.gall-cat{
+  display: flex;
+  margin-bottom: 25px;
+  align-items: center;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  color: var(--base-font-color);
+  text-decoration: none!important;
+  transition: all ease 0.3s;
+  &__img{
+    max-width: 180px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: block;
+    flex: 0 0 auto;
+    img{
+      max-width: 100%;
+    }
+  }
+  &__content{
+    padding-left: 15px;
+    flex-grow: 1;
+  }
+  
+  &__label{
+    margin-bottom: 10px;
+    color: #797979;
+  }
+
+  &__title{
+    font-family: var(--bold-font);
+    color: var(--base-font-color);
+    font-size: rem(16px);
+    transition: all ease 0.3s;
+  }
+
+  &:hover{
+    box-shadow: 0px 0px 40px rgba(0, 143, 204, 0.2);
+    .gall-cat__title{
+      color: var(--kit-primary);
+    }
+  }
+
+  @media (max-width: $smDesktopWidth) {
+    &__img{
+      max-width: 150px;
+    }
+  }
+}

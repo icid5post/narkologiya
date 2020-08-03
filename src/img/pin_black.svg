@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="72px" viewBox="0 0 50 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>pin_black</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-30.6%" y="-17.2%" width="161.1%" height="137.9%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icons" transform="translate(-400.000000, -347.000000)">
+            <g id="pin_black" filter="url(#filter-1)" transform="translate(407.000000, 353.000000)">
+                <circle id="Oval-193" fill="#7B7B7B" cx="17.7464789" cy="55.2676056" r="2.53521127"></circle>
+                <rect id="Rectangle-364" fill="#2C2C2C" x="16.7323944" y="13.6901408" width="2.02816901" height="42.5915493" rx="1.01408451"></rect>
+                <circle id="Oval-194" fill="#2C2C2C" cx="18" cy="18" r="18"></circle>
+                <circle id="Oval-194" fill="#EF2E2E" cx="18" cy="18" r="15.4647887"></circle>
+                <circle id="Oval-194" fill="#DEDEDE" cx="17.7464789" cy="18.2535211" r="3.54929577"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

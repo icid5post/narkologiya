@@ -1,0 +1,748 @@
+<!doctype html>
+<html lang="ru-RU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+    <title>Виртуальная приёмная</title>
+    <link rel="stylesheet" type="text/css" href="css/libs/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/libs/libs.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="visually/css/bvi-theme.css">
+</head>
+<body>
+
+<!--Page wrapper start-->
+<div id="wrapper">
+    <!--   Main header start-->
+    <header class="main-header">
+        <!--  header top navbar start-->
+        <div class="header-top-line">
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <div class="col-lg-6 col-9 d-flex align-items-center order-1 order-lg-0">
+
+
+                        <div class="ml-auto ml-lg-0 tech-btn-group hd-m-r">
+                            <a href="#" class="tech-btn">
+                                <i data-feather="home"></i>
+                            </a>
+                            <a href="#" class="tech-btn" data-toggle="modal" data-target="#searchModal">
+                                <i data-feather="search"></i>
+                            </a>
+                        </div>
+
+                        <div class="tech-btn-group">
+                            <div class="dropdown visual-dropdown">
+                                <a href="#" class="tech-btn"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i data-feather="eye"></i>
+                                </a>
+                                <div class="dropdown-menu">
+                                    <div class="bvi-container">
+                                        <div class="no-propagation">
+                                            <h4 class="bvi-container__title">
+                                                Вид сайта
+                                            </h4>
+
+                                            <ul class="special-mode-actions">
+                                                <li class="special-mode-actions__item">
+                                                    <button class="mode-action-item mode-action-item_default mode-action-init" id="mode-default" data-toggle="tooltip" data-placement="bottom" title="Обычная версия">
+                                                        A
+                                                    </button>
+                                                </li>
+                                                <li class="special-mode-actions__item">
+                                                    <button class="mode-action-item mode-action-item_whiteBlack" id="mode-whiteBlack" data-toggle="tooltip" data-placement="bottom" title="Тёмно белая">
+                                                        A
+                                                    </button>
+                                                </li>
+                                                <li class="special-mode-actions__item">
+                                                    <button class="mode-action-item mode-action-item_dark" id="mode-dark" data-toggle="tooltip" data-placement="bottom" title="Тёмная версия">
+                                                        A
+                                                    </button>
+                                                </li>
+                                            </ul>
+
+                                            <h4 class="dropdown-title">  <?php pll_e('Размер шрифта'); ?></h4>
+                                            <div class="appearance">
+                                                <div class="appearance__title">Увеличить на <span class="fontRange">0</span>%</div>
+                                                <div id="fontSizer" class="defaultSlider ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min" style="width: 0%;"></div><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 0%;"></span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="#" class="tech-btn d-none d-lg-flex">
+                                <i data-feather="smartphone"></i>
+                            </a>
+                            <a href="#" class="tech-btn"  id="speechToggle" title="Голосовой помощник включён">
+                                <i data-feather="volume-2"></i>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-6 col-3 d-flex align-items-center justify-content-end">
+
+                        <a href="#" class="tech-btn d-flex d-lg-none sideout-toggle mr-auto">
+                            <i data-feather="menu"></i>
+                        </a>
+
+                        <div class="tech-btn-group hd-m-r d-none d-lg-flex">
+                            <a href="#" class="tech-btn">
+                                Uz
+                            </a>
+                            <a href="#" class="tech-btn">
+                                Ru
+                            </a>
+                            <a href="#" class="tech-btn">
+                                En
+                            </a>
+                        </div>
+
+                        <a href="#" class="btn btn-default font-bold d-none d-lg-flex"
+                           data-toggle="modal"
+                           data-target="#siteMapModal"
+                        >
+                            <i data-feather="list" class="mr-2"></i>
+                            Карта сайта
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--        header top navbar end-->
+        <div class="main-header__content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <a href="#" class="header-logo">
+                            <div class="header-logo__img">
+                                <img src="./img/Gerb.png" alt="">
+                            </div>
+                            <span class="header-logo__content">
+                                НАЦИОНАЛЬНЫЙ ИНФОРМАЦИОННО-АНАЛИТИЧЕСКИЙ ЦЕНТР <br>
+                                ПО КОНТРОЛЮ ЗА НАРКОТИКАМИ ПРИ КАБИНЕТЕ МИНИСТРОВ <br>
+                                РЕСПУБЛИКИ УЗБЕКИСТАН
+                            </span>
+                        </a>
+                    </div>
+                    <div class="col-md-5 d-none d-md-flex justify-content-md-end">
+                        <div class="header-phone">
+                            <div class="header-phone__icon">
+                                <i data-feather="phone-call"></i>
+                            </div>
+                            <div class="header-phone__content phone-content">
+                                <a href="tel:" class="phone-content__phone">
+                                    (+998 71) 239-10-63 <br>
+                                    <span>
+                                        Телефон
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--        Header navbar start-->
+        <nav class="navbar navbar-expand-lg d-none d-lg-block">
+            <div class="container">
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav main-navbar">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                О Центре
+                            </a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Руководство</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Подразделения</a></li>
+                                    <li><a class="dropdown-item" href="#">Вакансии</a></li>
+                                    <li><a class="dropdown-item" href="#">Виртуальная приёмная</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Деятельность
+                            </a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Руководство</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Подразделения</a></li>
+                                    <li><a class="dropdown-item" href="#">Вакансии</a></li>
+                                    <li><a class="dropdown-item" href="#">Виртуальная приёмная</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Государственная комиссия
+                            </a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Руководство</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Подразделения</a></li>
+                                    <li><a class="dropdown-item" href="#">Вакансии</a></li>
+                                    <li><a class="dropdown-item" href="#">Виртуальная приёмная</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Интерактивные услуги
+                            </a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Руководство</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Подразделения</a></li>
+                                    <li><a class="dropdown-item" href="#">Вакансии</a></li>
+                                    <li><a class="dropdown-item" href="#">Виртуальная приёмная</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Пресс-центр
+                            </a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Руководство</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Подразделения</a></li>
+                                    <li><a class="dropdown-item" href="#">Вакансии</a></li>
+                                    <li><a class="dropdown-item" href="#">Виртуальная приёмная</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Нормативные документы
+                            </a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Руководство</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Подразделения</a></li>
+                                    <li><a class="dropdown-item" href="#">Вакансии</a></li>
+                                    <li><a class="dropdown-item" href="#">Виртуальная приёмная</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+        <!--        Header navbar end-->
+
+    </header>
+    <!--   Main header end-->
+    
+    <nav aria-label="breadcrumb">
+        <div class="container">
+            <ul class="breadcrumb-list">
+                <li class="breadcrumb-list__item">
+                    <a href="#"> <i data-feather="home"></i> Главная</a>
+                </li>
+                <li class="breadcrumb-list__item">
+                    <a href="#">Новости</a>
+                </li>
+                <li class="breadcrumb-list__item active">
+                    <span>Указ Президента: субъекты хозяйствования будут...</span>
+                </li>
+            </ul>
+        </div>
+    </nav>
+   
+    <!-- Page content start-->
+    <div class="page-content">
+
+        <div class="container">
+
+            <div class="row">
+                <!--   Right coll-->
+                <div class="col-lg-9 col-md-8 page-content-col">
+
+                    <h1 class="detail-title">
+                        ЦЕЛИ, ЗАДАЧИ И ФУНКЦИИ ЦЕНТРА
+                    </h1>
+                    <div class="detail-text">
+                        <p>
+                            Национальный информационно-аналитический центр по контролю за наркотиками при Кабинете Министров Республики Узбекистан (далее - НИАЦКН) образован 7 ноября 1996 года Постановлением Кабинета Министров №382, в целях усиления борьбы с незаконным оборотом наркотиков, а также выполнения Узбекистаном международных обязательств в данной сфере.
+                        </p>
+                        <p>
+                            НИАЦКН является постоянно действующим аппаратом Государственной комиссии Республики Узбекистан по контролю за наркотиками.
+                        </p>
+                        <p>
+                           <b> Основными целями и задачами НИАЦКН являются:</b>
+                        </p>
+                        <ul class="with-chevron">
+                            <li>
+                                организация разработки стратегии и основных направлений реализации государственной политики Республики Узбекистан в области контроля за наркотиками;
+                            </li>
+                            <li>
+                                разработка предложений по проектам государственной программы и межгосударственных документов о сотрудничестве по вопросам контроля за наркотиками;
+                            </li>
+                            <li>
+                                подготовка соответствующих аналитических материалов и предложений правительству, Государственной комиссии по контролю за наркотиками по вопросам наркотической ситуации, совершенствования организации борьбы с незаконным оборотом наркотических средств, психотропных веществ и прекурсоров как на национальном, так и на международном уровнях;
+                            </li>
+                            <li>
+                                сбор и формирование банка данных, их обобщение и всесторонний анализ, а также предоставление в установленном порядке соответствующей информации заинтересованным министерствам, ведомствам, организациям, в том числе международным, по вопросам контроля за наркотиками в республике и за ее пределами;
+                            </li>
+                            <li>
+                                установка и поддержка, в пределах своей компетенции, взаимодействия с центральными органами, соответствующими службами и организациями по контролю за наркотиками других стран, а также организация в установленном порядке обмена информацией;
+                            </li>
+                            <li>
+                                подготовка ежегодных докладов в ООН по выполнению Республикой Узбекистан положений конвенций, регулирующих международную деятельность по контролю за наркотиками;
+                            </li>
+                            <li>
+                                изучение, обобщение и распространение международного и республиканского опыта по предотвращению наркомании и борьбе с незаконным оборотом наркотиков, а также оказание содействия органам государственного управления республики в подготовке и проведении национальных и международных семинаров, конференций и симпозиумов;
+                            </li>
+                            <li>
+                                оказание, в пределах своей компетенции, соответствующей методической и практической помощи министерствам, ведомствам, региональным комиссиям Совета Министров Республики Каракалпакстан, хокимиятов областей и г.Ташкента в организации деятельности подведомственных им подразделений, непосредственно занимающихся предотвращением распространения наркомании и борьбой с незаконным оборотом наркотиков;
+                            </li>
+                            <li>
+                                внесение предложений Государственной комиссии по контролю за наркотиками по использованию финансовых средств, выделяемых из госбюджета, а также поступающих от предприятий, учреждений, частных лиц, международных фондов и организаций, направленных на предотвращение наркомании и борьбу с незаконным оборотом наркотиков на территории Узбекистана.
+                            </li>
+                        </ul>
+                        <p>
+                            НИАЦКН возглавляет директор, который назначается и освобождается от должности Президентом Республики Узбекистан, по представлению председателя Государственной комиссии по контролю за наркотиками.
+                        </p>
+                    </div>
+
+                </div>
+                <!-- Right coll end-->
+
+                <!-- left col start -->
+
+                <div class="col-lg-3 col-md-4 page-content-aside">
+                    <div class="aside-nav">
+                        <h2 class="content-title sidebar-title">
+                            Пресс-центр
+                        </h2>
+                        <ul class="sidebar-nav" id="metismenu">
+                            <li class="sidebar-nav__item">
+                                <a href="#">
+                                    <span class="item-arrow">
+                                        <i data-feather="chevron-right"></i>
+                                    </span>
+                                    Нормативные документы
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="#">Международное законодательство</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Законы и Постановления РУз</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Гос. программа 2016-2020</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Программы и стратегии</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sidebar-nav__item">
+                                <a href="#">
+                                     <span class="item-arrow">
+                                        <i data-feather="chevron-right"></i>
+                                    </span>
+                                    Интерактивные услуги
+                                </a>
+                            </li>
+                            <li class="sidebar-nav__item">
+                                <a href="#">
+                                     <span class="item-arrow">
+                                        <i data-feather="chevron-right"></i>
+                                    </span>
+                                    Государственная комиссия
+                                </a>
+                            </li>
+                            <li class="sidebar-nav__item">
+                                <a href="#">
+                                    <span class="item-arrow">
+                                        <i data-feather="chevron-right"></i>
+                                    </span>
+                                    Пресс-центр
+                                </a>
+                            </li>
+                            <li class="sidebar-nav__item">
+                                <a href="#">
+                                    <span class="item-arrow">
+                                        <i data-feather="chevron-right"></i>
+                                    </span>
+                                    Деятельность
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="aside-banner aside-banner_content" style="background-image: url('./img/aside-bg2.jpg')">
+                        <div class="aside-banner__logo">
+                            <img src="./img/aside-logo.png" alt="">
+                        </div>
+                        <div class="aside-banner__title">
+                            2020 yil
+                        </div>
+                        <div class="aside-banner__sub">
+                            Ilm-ma’rifat va raqamli iqtisodiyotni rivojlantirish yili
+                        </div>
+                    </div>
+
+                    <a href="#" class="aside-coll-item aside-coll-item_md">
+                        <div class="aside-coll-item__img">
+                            <img src="./img/mygov-logo.png" alt="">
+                        </div>
+                        <div class="aside-coll-item__title">
+                            Единый портал интерактивных
+                            государственных услуг
+                        </div>
+                    </a>
+                    <a href="#" class="aside-coll-item aside-coll-item_md">
+                        <div class="aside-coll-item__img">
+                            <img src="./img/openData-logo.png" alt="">
+                        </div>
+                        <div class="aside-coll-item__title">
+                            Портал открытых данных Республики Узбекистан
+                        </div>
+                    </a>
+
+                </div>
+                <!-- left col end -->
+            </div>
+
+            <section class="main-section">
+                <div class="container">
+                    <h2 class="section-title">
+                        Полезные ссылки
+                    </h2>
+                    <div class="partners-slider owl-carousel nav-center">
+                        <a href="#"  target="_blank" class="partner">
+                            <div class="partner__logo">
+                                <img src="./img/partner1.png" alt="">
+                            </div>
+                            <span class="partner__title">
+                        Официальный сайт Президента
+                    </span>
+                        </a>
+                        <a href="#"  target="_blank" class="partner">
+                            <div class="partner__logo">
+                                <img src="./img/partner2.png" alt="">
+                            </div>
+                            <span class="partner__title">
+                        Официальный сайт Президента
+                    </span>
+                        </a>
+                        <a href="#"  target="_blank" class="partner">
+                            <div class="partner__logo">
+                                <img src="./img/partner3.png" alt="">
+                            </div>
+                            <span class="partner__title">
+                        Официальный сайт Президента
+                    </span>
+                        </a>
+                        <a href="#"  target="_blank" class="partner">
+                            <div class="partner__logo">
+                                <img src="./img/partner1.png" alt="">
+                            </div>
+                            <span class="partner__title">
+                        Официальный сайт Президента
+                    </span>
+                        </a>
+                        <a href="#"  target="_blank" class="partner">
+                            <div class="partner__logo">
+                                <img src="./img/partner1.png" alt="">
+                            </div>
+                            <span class="partner__title">
+                        Официальный сайт Президента
+                    </span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+
+        </div>
+
+    </div>
+    <!--    Page content end-->
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <div class="ft-title mb-3">
+                        НАЦИОНАЛЬНЫЙ ИНФОРМАЦИОННО-АНАЛИТИЧЕСКИЙ ЦЕНТР
+                        ПО КОНТРОЛЮ ЗА НАРКОТИКАМИ ПРИ КАБИНЕТЕ МИНИСТРОВ
+                        РЕСПУБЛИКИ УЗБЕКИСТАН
+                    </div>
+                    <div class="ft-logo">
+                        <div class="ft-logo_img">
+                            <img src="./img/OSCE_logo-ru.png" alt="">
+                        </div>
+                        <div class="ft-logo__desc">
+                            Данная версия веб-сайта разработана при содействии Координатора проектов ОБСЕ в Узбекистане
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="soc-list d-flex justify-content-center">
+                        <a href="#" class="soc-list-item facebook">
+                            <i data-feather="facebook"></i>
+                        </a>
+                        <a href="#" class="soc-list-item youtube">
+                            <i data-feather="youtube"></i>
+                        </a>
+                        <a href="#" class="soc-list-item twitter">
+                            <i data-feather="twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="ft-contacts">
+                        <div class="ft-contact">
+                            <div class="ft-contact__icon">
+                                <i data-feather="map-pin"></i>
+                            </div>
+                            <div class="ft-contact__title">
+                                Узбекистан, г.Ташкент, 100000, площадь Мустакиллик 5
+                            </div>
+                        </div>
+                        <div class="ft-contact">
+                            <div class="ft-contact__icon">
+                                <i data-feather="phone-call"></i>
+                            </div>
+                            <a href="tel:+998712391063" class="ft-contact__title">
+                                (+998 71) 239-10-63
+                            </a>
+                        </div>
+                        <div class="ft-contact">
+                            <div class="ft-contact__icon">
+                                <i data-feather="mail"></i>
+                            </div>
+                            <a href="mailto:ncdc@uznet.net" class="ft-contact__title">
+                                ncdc@uznet.net
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row copy-row align-items-center">
+                <div class="col-md-6">
+                    <div class="copyright">
+                        © 2018-2020. Все права защищены
+                    </div>
+                </div>
+                <div class="col-md-6 d-md-flex justify-content-md-end">
+                    <div class="cnt d-none d-lg-block">
+                        <img src="./img/cnt.png" alt="">
+                    </div>
+
+                    <div class="dev">
+                        <div class="dev__title">
+                            Создатель сайта:
+                        </div>
+                        <a href="#" class="dev__logo">
+                            <img src="./img/ft-TechnoCorp_Logo.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</div>
+<!--Page wrapper end-->
+
+<!--Site map Modal-->
+<div class="modal fade" id="siteMapModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="container">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Карта сайта</h5>
+                </div>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i data-feather="x"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ul class="site-map-list">
+                                <li>
+                                    <a href="#">Главная</a>
+                                </li>
+                                <li>
+                                    <a href="#">О Центре</a>
+                                    <ul>
+                                        <li><a href="">О Нас</a></li>
+                                        <li><a href="">Структура</a></li>
+                                        <li><a href="">Контакты</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">О Центре</a>
+                                    <ul>
+                                        <li><a href="">О Нас</a></li>
+                                        <li><a href="">Структура</a></li>
+                                        <li><a href="">Контакты</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">О Центре</a>
+                                    <ul>
+                                        <li><a href="">О Нас</a></li>
+                                        <li><a href="">Структура</a></li>
+                                        <li><a href="">Контакты</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!--Site map Modal end-->
+
+<!--Search block-->
+<div class="modal fade search-modal" id="searchModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="#" class="search-form">
+                    <input type="text" class="form-control" placeholder="Поиск">
+                    <button class="search-action">
+                        <i data-feather="search"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--Mobile sidebar menu-->
+<nav id="sidebarMenu" class="slideout-menu">
+
+    <div class="tech-btn-group py-4 justify-content-center">
+        <a href="#" class="tech-btn">
+            Uz
+        </a>
+        <a href="#" class="tech-btn">
+            Ru
+        </a>
+        <a href="#" class="tech-btn">
+            En
+        </a>
+    </div>
+
+    <ul class="slideout-menu-list">
+        <li>
+            <span class="slideout-menu-title">О Центре</span>
+            <ul class="slideout-menu-sub">
+                <li><a href="#">История</a></li>
+                <li><a href="#">Структура</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Руководство</a></li>
+            </ul>
+        </li>
+        <li>
+            <span class="slideout-menu-title">Деятельность </span>
+            <ul class="slideout-menu-sub">
+                <li><a href="#">История</a></li>
+                <li><a href="#">Структура</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Руководство</a></li>
+            </ul>
+        </li>
+        <li>
+            <span class="slideout-menu-title">Государственная комиссия  </span>
+            <ul class="slideout-menu-sub">
+                <li><a href="#">История</a></li>
+                <li><a href="#">Структура</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Руководство</a></li>
+            </ul>
+        </li>
+        <li>
+            <span class="slideout-menu-title">Интерактивные услуги </span>
+            <ul class="slideout-menu-sub">
+                <li><a href="#">История</a></li>
+                <li><a href="#">Структура</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Руководство</a></li>
+            </ul>
+        </li>
+        <li>
+            <span class="slideout-menu-title">Нормативные документы </span>
+            <ul class="slideout-menu-sub">
+                <li><a href="#">История</a></li>
+                <li><a href="#">Структура</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Руководство</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#" class="slideout-menu-title">Контакты</a>
+        </li>
+    </ul>
+</nav>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/feather.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/libs.js"></script>
+
+<!--Special version -->
+<script src="./visually/js/jquery.cookie.js"></script>
+<script src="./visually/js/mousetrap.min.js"></script>
+<script src="./visually/js/narrator.js"></script>
+<script src="./visually/js/responsivevoice.min.js"></script>
+<script src="./visually/js/specialVersion.js"></script>
+
+<script src="js/main.js"></script>
+<script>
+    feather.replace()
+</script>
+</body>
+</html>
