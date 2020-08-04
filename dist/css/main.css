@@ -1355,9 +1355,10 @@ MAIN BANNER CSS START
   background-image: url(../img/banner-holder.png);
   background-position: center center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
-/* line 18, src/sass/components/__main-banner.scss */
+/* line 19, src/sass/components/__main-banner.scss */
 .main-banner .owl-prev,
 .main-banner .owl-next {
   position: absolute;
@@ -1366,17 +1367,17 @@ MAIN BANNER CSS START
           transform: translateY(-50%);
 }
 
-/* line 25, src/sass/components/__main-banner.scss */
+/* line 26, src/sass/components/__main-banner.scss */
 .main-banner .owl-prev {
   left: 5%;
 }
 
-/* line 29, src/sass/components/__main-banner.scss */
+/* line 30, src/sass/components/__main-banner.scss */
 .main-banner .owl-next {
   right: 5%;
 }
 
-/* line 58, src/sass/components/__main-banner.scss */
+/* line 59, src/sass/components/__main-banner.scss */
 .main-banner__item {
   height: 740px;
   background-size: cover;
@@ -1384,7 +1385,7 @@ MAIN BANNER CSS START
   position: relative;
 }
 
-/* line 63, src/sass/components/__main-banner.scss */
+/* line 64, src/sass/components/__main-banner.scss */
 .main-banner__item:after {
   content: "";
   position: absolute;
@@ -1395,7 +1396,7 @@ MAIN BANNER CSS START
   background: linear-gradient(303.33deg, rgba(0, 143, 204, 0.45) 18.07%, rgba(0, 204, 153, 0.7) 120.53%);
 }
 
-/* line 74, src/sass/components/__main-banner.scss */
+/* line 75, src/sass/components/__main-banner.scss */
 .main-banner .owl-dots {
   position: absolute;
   bottom: 70px;
@@ -1422,7 +1423,7 @@ MAIN BANNER CSS START
     }
     */
   }
-  /* line 85, src/sass/components/__main-banner.scss */
+  /* line 86, src/sass/components/__main-banner.scss */
   .main-banner .owl-dots {
     bottom: 90px;
   }
@@ -1439,7 +1440,7 @@ MAIN BANNER CSS START
     */
     height: 700px;
   }
-  /* line 104, src/sass/components/__main-banner.scss */
+  /* line 105, src/sass/components/__main-banner.scss */
   .main-banner__item {
     height: 700px;
   }
@@ -1455,36 +1456,36 @@ MAIN BANNER CSS START
     }
     */
   }
-  /* line 114, src/sass/components/__main-banner.scss */
+  /* line 115, src/sass/components/__main-banner.scss */
   .main-banner .owl-dots {
     bottom: 50px;
   }
-  /* line 124, src/sass/components/__main-banner.scss */
+  /* line 125, src/sass/components/__main-banner.scss */
   .main-banner .owl-nav {
     display: none;
   }
 }
 
-/* line 130, src/sass/components/__main-banner.scss */
+/* line 131, src/sass/components/__main-banner.scss */
 .main-page .main-banner .banner-item {
   padding-top: 265px;
 }
 
 @media (max-width: 1280px) {
-  /* line 130, src/sass/components/__main-banner.scss */
+  /* line 131, src/sass/components/__main-banner.scss */
   .main-page .main-banner .banner-item {
     padding-top: 220px;
   }
 }
 
 @media (max-width: 991px) {
-  /* line 130, src/sass/components/__main-banner.scss */
+  /* line 131, src/sass/components/__main-banner.scss */
   .main-page .main-banner .banner-item {
     padding-top: 170px;
   }
 }
 
-/* line 142, src/sass/components/__main-banner.scss */
+/* line 143, src/sass/components/__main-banner.scss */
 .banner-item__content {
   position: relative;
   z-index: 200;
@@ -1500,43 +1501,43 @@ MAIN BANNER CSS START
   padding-bottom: 50px;
 }
 
-/* line 153, src/sass/components/__main-banner.scss */
+/* line 154, src/sass/components/__main-banner.scss */
 .banner-item__title {
   margin-bottom: 30px;
   font-family: var(--bold-font);
   font-size: 28px;
 }
 
-/* line 159, src/sass/components/__main-banner.scss */
+/* line 160, src/sass/components/__main-banner.scss */
 .banner-item__desc {
   margin-bottom: 50px;
   font-size: 1.14286rem;
 }
 
 @media (max-width: 1280px) {
-  /* line 165, src/sass/components/__main-banner.scss */
+  /* line 166, src/sass/components/__main-banner.scss */
   .banner-item__title {
     font-size: 22px;
   }
 }
 
 @media (max-width: 991px) {
-  /* line 171, src/sass/components/__main-banner.scss */
+  /* line 172, src/sass/components/__main-banner.scss */
   .banner-item__content {
     height: calc(650px - 220px);
   }
-  /* line 175, src/sass/components/__main-banner.scss */
+  /* line 176, src/sass/components/__main-banner.scss */
   .banner-item__title, .banner-item__desc {
     margin-bottom: 25px;
   }
 }
 
-/* line 183, src/sass/components/__main-banner.scss */
+/* line 184, src/sass/components/__main-banner.scss */
 .owl-dots {
   counter-reset: dots;
 }
 
-/* line 187, src/sass/components/__main-banner.scss */
+/* line 188, src/sass/components/__main-banner.scss */
 .owl-carousel button.owl-dot {
   background: #FFFFFF;
   -webkit-box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
@@ -1552,13 +1553,13 @@ MAIN BANNER CSS START
   outline: none !important;
 }
 
-/* line 198, src/sass/components/__main-banner.scss */
+/* line 199, src/sass/components/__main-banner.scss */
 .owl-carousel button.owl-dot:hover, .owl-carousel button.owl-dot.active {
   background-color: var(--kit-primary);
   color: #fff;
 }
 
-/* line 205, src/sass/components/__main-banner.scss */
+/* line 206, src/sass/components/__main-banner.scss */
 .owl-dot:before {
   counter-increment: dots;
   content: counter(dots);
@@ -1687,7 +1688,7 @@ COLLECTIONS LIST CSS START
           align-items: center;
   padding: 30px 40px 30px 60px;
   font-size: 22px;
-  font-family: var(--bold-font);
+  font-weight: 600;
   border: 1px solid var(--primary-color);
   border-image-source: linear-gradient(45deg, #008FCC, #00CC99);
   border-image-slice: 1;
@@ -4003,3 +4004,30 @@ CHARTS CSS START
 /*
 CHARTS CSS  END
  */
+/* line 150, src/sass/main.scss */
+.scrolltotop {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  -webkit-box-shadow: 0px 0px 30px rgba(0, 204, 153, 0.2);
+          box-shadow: 0px 0px 30px rgba(0, 204, 153, 0.2);
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+  color: var(--kit-primary);
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  display: none;
+  text-align: center;
+  z-index: 999;
+  background-color: #fff;
+}
+
+/* line 169, src/sass/main.scss */
+.scrolltotop:hover {
+  background-color: var(--kit-primary);
+  color: #fff;
+}

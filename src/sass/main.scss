@@ -146,3 +146,27 @@ CHARTS CSS START
 /*
 CHARTS CSS  END
  */
+
+.scrolltotop{
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  box-shadow: 0px 0px 30px rgba(0, 204, 153, 0.2);
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+  color: var(--kit-primary);
+  transition: all .5s;
+  display: none;
+  text-align: center;
+  z-index: 999;
+  background-color: #fff;
+}
+
+.scrolltotop:hover{
+  background-color: var(--kit-primary);
+  color: #fff;
+}
