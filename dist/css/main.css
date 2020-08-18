@@ -1228,7 +1228,12 @@ MAIN NAVBAR CSS START
   padding-bottom: 0;
 }
 
-/* line 48, src/sass/components/_navbar.scss */
+/* line 47, src/sass/components/_navbar.scss */
+.main-navbar .dropdown-menu ul > li:last-child .dropdown-item {
+  border-bottom: 0;
+}
+
+/* line 52, src/sass/components/_navbar.scss */
 .main-navbar .dropdown-item {
   position: relative;
   padding: 10px 10px 10px 20px;
@@ -1237,7 +1242,7 @@ MAIN NAVBAR CSS START
   margin-bottom: 5px;
 }
 
-/* line 54, src/sass/components/_navbar.scss */
+/* line 58, src/sass/components/_navbar.scss */
 .main-navbar .dropdown-item:after {
   content: "";
   position: absolute;
@@ -1251,7 +1256,7 @@ MAIN NAVBAR CSS START
   transition: all ease 0.3s;
 }
 
-/* line 65, src/sass/components/_navbar.scss */
+/* line 69, src/sass/components/_navbar.scss */
 .main-navbar .dropdown-item:focus, .main-navbar .dropdown-item:hover {
   background-color: transparent;
   border-bottom-color: var(--kit-primary);
@@ -1259,18 +1264,18 @@ MAIN NAVBAR CSS START
   margin-left: 10px;
 }
 
-/* line 72, src/sass/components/_navbar.scss */
+/* line 76, src/sass/components/_navbar.scss */
 .main-navbar .dropdown-item:focus:after, .main-navbar .dropdown-item:hover:after {
   background-color: var(--kit-primary);
   border-color: var(--kit-primary);
 }
 
-/* line 81, src/sass/components/_navbar.scss */
+/* line 88, src/sass/components/_navbar.scss */
 .site-map-list {
   list-style: none;
 }
 
-/* line 83, src/sass/components/_navbar.scss */
+/* line 90, src/sass/components/_navbar.scss */
 .site-map-list li > a {
   display: block;
   color: #757575;
@@ -1281,7 +1286,7 @@ MAIN NAVBAR CSS START
   transition: all ease 0.3s;
 }
 
-/* line 91, src/sass/components/_navbar.scss */
+/* line 98, src/sass/components/_navbar.scss */
 .site-map-list li > a:after {
   content: "";
   position: absolute;
@@ -1293,13 +1298,13 @@ MAIN NAVBAR CSS START
   top: 15px;
 }
 
-/* line 101, src/sass/components/_navbar.scss */
+/* line 108, src/sass/components/_navbar.scss */
 .site-map-list li > a:hover {
   color: var(--kit-primary);
   border-bottom-color: var(--kit-primary);
 }
 
-/* line 104, src/sass/components/_navbar.scss */
+/* line 111, src/sass/components/_navbar.scss */
 .site-map-list li > a:hover:after {
   background-color: var(--kit-primary);
   border-color: var(--kit-primary);

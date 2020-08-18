@@ -43,6 +43,10 @@
       padding-top: 0;
       padding-bottom: 0;
     }
+
+    > li:last-child .dropdown-item{
+      border-bottom: 0;
+    }
   }
 
   .dropdown-item{
@@ -74,7 +78,10 @@
       background-color: var(--kit-primary);
       border-color: var(--kit-primary);
     }
+
   }
+
+
 }
 
 
