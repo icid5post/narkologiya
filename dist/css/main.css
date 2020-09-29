@@ -279,14 +279,22 @@ button {
   height: 50px;
   text-align: center;
   color: var(--kit-primary);
-  font-size: 30px;
+  font-size: 44px;
   margin: 0 5px;
   padding: 0;
   -webkit-transition: all ease 0.3s;
   transition: all ease 0.3s;
 }
 
-/* line 142, src/sass/components/__buttons.scss */
+/* line 141, src/sass/components/__buttons.scss */
+.owl-carousel .owl-nav button.owl-prev > span,
+.owl-carousel .owl-nav button.owl-next > span {
+  height: 30px;
+  display: block;
+  line-height: 25px;
+}
+
+/* line 146, src/sass/components/__buttons.scss */
 .owl-carousel .owl-nav button.owl-prev svg,
 .owl-carousel .owl-nav button.owl-next svg {
   stroke-width: 1;
@@ -294,33 +302,33 @@ button {
   height: 30px;
 }
 
-/* line 148, src/sass/components/__buttons.scss */
+/* line 152, src/sass/components/__buttons.scss */
 .owl-carousel .owl-nav button.owl-prev:hover,
 .owl-carousel .owl-nav button.owl-next:hover {
   background-color: var(--kit-primary);
   color: #fff;
 }
 
-/* line 153, src/sass/components/__buttons.scss */
+/* line 157, src/sass/components/__buttons.scss */
 .owl-carousel .owl-nav button.owl-prev:first-child,
 .owl-carousel .owl-nav button.owl-next:first-child {
   margin-left: 0;
 }
 
-/* line 156, src/sass/components/__buttons.scss */
+/* line 160, src/sass/components/__buttons.scss */
 .owl-carousel .owl-nav button.owl-prev:last-child,
 .owl-carousel .owl-nav button.owl-next:last-child {
   margin-right: 0;
 }
 
-/* line 161, src/sass/components/__buttons.scss */
+/* line 165, src/sass/components/__buttons.scss */
 .nav-center .owl-nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-/* line 165, src/sass/components/__buttons.scss */
+/* line 169, src/sass/components/__buttons.scss */
 .btn-print {
   background-color: #fff;
   color: #666666;
@@ -334,26 +342,26 @@ button {
   transition: all ease 0.3s;
 }
 
-/* line 174, src/sass/components/__buttons.scss */
+/* line 178, src/sass/components/__buttons.scss */
 .btn-print:hover {
   background-color: var(--kit-primary);
   color: #fff;
 }
 
-/* line 178, src/sass/components/__buttons.scss */
+/* line 182, src/sass/components/__buttons.scss */
 .btn-print svg {
   width: 18px;
   height: 18px;
   margin-right: 10px;
 }
 
-/* line 187, src/sass/components/__buttons.scss */
+/* line 191, src/sass/components/__buttons.scss */
 .btn-py-lg {
   padding-left: 30px;
   padding-right: 30px;
 }
 
-/* line 192, src/sass/components/__buttons.scss */
+/* line 196, src/sass/components/__buttons.scss */
 .text-primary-kit {
   color: var(--kit-primary);
 }
@@ -531,9 +539,6 @@ input {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  background: #F9F9F9;
-  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   overflow: hidden;
   padding: 15px 10px;
@@ -542,10 +547,9 @@ input {
 
 /* line 10, src/sass/components/_pagination.scss */
 .pagination .page-link {
-  color: #AAAAAA;
+  color: var(--kit-primary);
   border: 0;
-  padding: 5px 8px;
-  background-color: transparent;
+  padding: 8px 12px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -555,14 +559,17 @@ input {
   border-radius: 5px;
   -webkit-transition: all ease 0.3s;
   transition: all ease 0.3s;
+  background-color: #fff;
+  -webkit-filter: drop-shadow(0px 0px 8px rgba(0, 204, 153, 0.3));
+          filter: drop-shadow(0px 0px 8px rgba(0, 204, 153, 0.3));
 }
 
-/* line 21, src/sass/components/_pagination.scss */
+/* line 22, src/sass/components/_pagination.scss */
 .pagination .page-item {
   margin: 0 10px;
 }
 
-/* line 23, src/sass/components/_pagination.scss */
+/* line 24, src/sass/components/_pagination.scss */
 .pagination .page-item:hover .page-link,
 .pagination .page-item.active .page-link {
   background-color: var(--kit-primary);
@@ -575,14 +582,14 @@ input {
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 33, src/sass/components/_pagination.scss */
+  /* line 34, src/sass/components/_pagination.scss */
   .pagination .page-item {
     margin: 0 5px;
   }
 }
 
 @media (max-width: 991px) {
-  /* line 40, src/sass/components/_pagination.scss */
+  /* line 41, src/sass/components/_pagination.scss */
   .pagination-nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -593,32 +600,32 @@ input {
   }
 }
 
-/* line 47, src/sass/components/_pagination.scss */
+/* line 48, src/sass/components/_pagination.scss */
 .page-item:first-child .page-link,
 .page-item:last-child .page-link {
   border-radius: 4px;
 }
 
-/* line 50, src/sass/components/_pagination.scss */
+/* line 51, src/sass/components/_pagination.scss */
 .page-item:first-child .page-link:hover,
 .page-item:last-child .page-link:hover {
   background-color: #ECECEC;
   color: #AAAAAA;
 }
 
-/* line 54, src/sass/components/_pagination.scss */
+/* line 55, src/sass/components/_pagination.scss */
 .page-item:first-child .page-link svg,
 .page-item:last-child .page-link svg {
   width: 14px;
   height: 14px;
 }
 
-/* line 61, src/sass/components/_pagination.scss */
+/* line 62, src/sass/components/_pagination.scss */
 .pagination .page-item:first-child .page-link svg {
   margin-right: 5px;
 }
 
-/* line 67, src/sass/components/_pagination.scss */
+/* line 68, src/sass/components/_pagination.scss */
 .pagination .page-item:last-child .page-link svg {
   margin-left: 5px;
 }
@@ -1213,27 +1220,29 @@ MAIN NAVBAR CSS START
 .main-navbar .dropdown-menu {
   margin-top: 20px;
   min-width: 240px;
+  padding: 0;
 }
 
-/* line 38, src/sass/components/_navbar.scss */
+/* line 39, src/sass/components/_navbar.scss */
 .main-navbar .dropdown-menu ul {
   position: relative;
   list-style: none;
   padding: 10px 20px;
 }
 
-/* line 42, src/sass/components/_navbar.scss */
+/* line 43, src/sass/components/_navbar.scss */
 .main-navbar .dropdown-menu ul ul {
   padding-top: 0;
   padding-bottom: 0;
 }
 
-/* line 47, src/sass/components/_navbar.scss */
+/* line 48, src/sass/components/_navbar.scss */
 .main-navbar .dropdown-menu ul > li:last-child .dropdown-item {
   border-bottom: 0;
+  margin-bottom: 0;
 }
 
-/* line 52, src/sass/components/_navbar.scss */
+/* line 54, src/sass/components/_navbar.scss */
 .main-navbar .dropdown-item {
   position: relative;
   padding: 10px 10px 10px 20px;
@@ -1242,7 +1251,7 @@ MAIN NAVBAR CSS START
   margin-bottom: 5px;
 }
 
-/* line 58, src/sass/components/_navbar.scss */
+/* line 60, src/sass/components/_navbar.scss */
 .main-navbar .dropdown-item:after {
   content: "";
   position: absolute;
@@ -1256,7 +1265,7 @@ MAIN NAVBAR CSS START
   transition: all ease 0.3s;
 }
 
-/* line 69, src/sass/components/_navbar.scss */
+/* line 71, src/sass/components/_navbar.scss */
 .main-navbar .dropdown-item:focus, .main-navbar .dropdown-item:hover {
   background-color: transparent;
   border-bottom-color: var(--kit-primary);
@@ -1264,18 +1273,18 @@ MAIN NAVBAR CSS START
   margin-left: 10px;
 }
 
-/* line 76, src/sass/components/_navbar.scss */
+/* line 78, src/sass/components/_navbar.scss */
 .main-navbar .dropdown-item:focus:after, .main-navbar .dropdown-item:hover:after {
   background-color: var(--kit-primary);
   border-color: var(--kit-primary);
 }
 
-/* line 88, src/sass/components/_navbar.scss */
+/* line 90, src/sass/components/_navbar.scss */
 .site-map-list {
   list-style: none;
 }
 
-/* line 90, src/sass/components/_navbar.scss */
+/* line 92, src/sass/components/_navbar.scss */
 .site-map-list li > a {
   display: block;
   color: #757575;
@@ -1286,7 +1295,7 @@ MAIN NAVBAR CSS START
   transition: all ease 0.3s;
 }
 
-/* line 98, src/sass/components/_navbar.scss */
+/* line 100, src/sass/components/_navbar.scss */
 .site-map-list li > a:after {
   content: "";
   position: absolute;
@@ -1298,13 +1307,13 @@ MAIN NAVBAR CSS START
   top: 15px;
 }
 
-/* line 108, src/sass/components/_navbar.scss */
+/* line 110, src/sass/components/_navbar.scss */
 .site-map-list li > a:hover {
   color: var(--kit-primary);
   border-bottom-color: var(--kit-primary);
 }
 
-/* line 111, src/sass/components/_navbar.scss */
+/* line 113, src/sass/components/_navbar.scss */
 .site-map-list li > a:hover:after {
   background-color: var(--kit-primary);
   border-color: var(--kit-primary);
@@ -3880,6 +3889,196 @@ STATISTIC CSS START
 STATISTIC END
  */
 /*
+STRUCTURE CSS START
+ */
+/* line 1, src/sass/components/_structure.scss */
+.structure-tree {
+  padding: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* line 7, src/sass/components/_structure.scss */
+.structure-item-hd {
+  width: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 14, src/sass/components/_structure.scss */
+.structure-item {
+  padding: 10px 20px;
+  border: 2px solid var(--kit-primary);
+  color: var(--kit-primary);
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+  font-family: var(--bold-font);
+  position: relative;
+  margin-bottom: 98px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* line 27, src/sass/components/_structure.scss */
+.structure-item .line-b {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 33, src/sass/components/_structure.scss */
+.structure-item .line-b:after {
+  content: "";
+  position: absolute;
+  bottom: -100px;
+  height: 100px;
+  width: 1px;
+  background-color: var(--kit-primary);
+  left: 50%;
+}
+
+/* line 42, src/sass/components/_structure.scss */
+.structure-item .line-b_long:after {
+  height: 200px;
+  bottom: -200px;
+}
+
+/* line 48, src/sass/components/_structure.scss */
+.structure-item.line-r:before {
+  content: "";
+  position: absolute;
+  right: -100px;
+  height: 1px;
+  width: 100px;
+  background-color: var(--kit-primary);
+  top: 50%;
+}
+
+/* line 58, src/sass/components/_structure.scss */
+.structure-item .line-t {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* line 64, src/sass/components/_structure.scss */
+.structure-item .line-t:after {
+  content: "";
+  position: absolute;
+  right: 50%;
+  height: 100px;
+  width: 1px;
+  background-color: var(--kit-primary);
+  top: -100px;
+}
+
+/* line 73, src/sass/components/_structure.scss */
+.structure-item .line-t.line-t_short:after {
+  height: 40px;
+  top: -40px;
+}
+
+/* line 77, src/sass/components/_structure.scss */
+.structure-item .line-t.short-left:before {
+  content: "";
+  position: absolute;
+  top: -42px;
+  height: 40px;
+  width: calc(50% + 14px);
+  background-color: #fff;
+  z-index: 1;
+  left: -15px;
+}
+
+/* line 87, src/sass/components/_structure.scss */
+.structure-item .line-t.short-right:before {
+  content: "";
+  position: absolute;
+  top: -42px;
+  height: 40px;
+  width: 130%;
+  background-color: #fff;
+  z-index: 1;
+  left: 50%;
+}
+
+/* line 99, src/sass/components/_structure.scss */
+.structure-item.sub-item {
+  margin-right: 135px;
+  margin-top: -20px;
+  margin-bottom: 60px;
+}
+
+/* line 106, src/sass/components/_structure.scss */
+.structure-item-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 110, src/sass/components/_structure.scss */
+.structure-item-row:after {
+  content: "";
+  position: absolute;
+  top: -39px;
+  width: 100%;
+  left: 0;
+  height: 1px;
+  background-color: var(--kit-primary);
+}
+
+@media (max-width: 991px) {
+  /* line 122, src/sass/components/_structure.scss */
+  .structure-item {
+    margin-bottom: 48px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px;
+    font-size: 12px;
+  }
+  /* line 128, src/sass/components/_structure.scss */
+  .structure-item .line-t:after, .structure-item.line-r:before {
+    content: none;
+  }
+  /* line 135, src/sass/components/_structure.scss */
+  .structure-item .line-b_long:after {
+    height: 50px;
+    bottom: -50px;
+  }
+  /* line 140, src/sass/components/_structure.scss */
+  .structure-item.sub-item {
+    margin-top: 0;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+/*
+STRUCTURE END
+ */
+/*
 visually CSS START
  */
 /* line 2, src/sass/components/_visual.scss */
@@ -4009,7 +4208,7 @@ CHARTS CSS START
 /*
 CHARTS CSS  END
  */
-/* line 150, src/sass/main.scss */
+/* line 158, src/sass/main.scss */
 .scrolltotop {
   position: fixed;
   right: 20px;
@@ -4031,7 +4230,7 @@ CHARTS CSS  END
   background-color: #fff;
 }
 
-/* line 169, src/sass/main.scss */
+/* line 177, src/sass/main.scss */
 .scrolltotop:hover {
   background-color: var(--kit-primary);
   color: #fff;

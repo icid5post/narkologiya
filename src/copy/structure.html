@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" type="image/png" href="favicon.png"/>
-    <title>Главная страница</title>
+    <title>Виртуальная приёмная</title>
     <link rel="stylesheet" type="text/css" href="css/libs/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/libs/libs.css">
     <link rel="stylesheet" type="text/css" href="css/fonts.css">
@@ -30,7 +30,7 @@
                             <a href="#" class="tech-btn">
                                 <i data-feather="home"></i>
                             </a>
-                            <a href="#" class="tech-btn">
+                            <a href="#" class="tech-btn" data-toggle="modal" data-target="#searchModal">
                                 <i data-feather="search"></i>
                             </a>
                         </div>
@@ -272,8 +272,11 @@
                 <li class="breadcrumb-list__item">
                     <a href="#"> <i data-feather="home"></i> Главная</a>
                 </li>
+                <li class="breadcrumb-list__item">
+                    <a href="#">Новости</a>
+                </li>
                 <li class="breadcrumb-list__item active">
-                    <span>Новости</span>
+                    <span>Указ Президента: субъекты хозяйствования будут...</span>
                 </li>
             </ul>
         </div>
@@ -287,169 +290,39 @@
             <div class="row">
                 <!--   Right coll-->
                 <div class="col-lg-9 col-md-8 page-content-col">
-                    <div class="news-tabs-wrap">
-                        <ul class="nav nav-tabs news-tabs" id="news-tab" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#">Новости Узбекистана</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Новости Центра</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Международные встречи и мероприятия</a>
-                            </li>
-                        </ul>
-                    </div>
 
-                    <div class="news-tab-content">
-                        <div class="row">
-                            <div class="col-lg-4 col-md-6">
-                                <div class="news-card">
-                                    <a href="#" class="news-card__img" style="background-image: url('./img/news1.jpg')">
 
-                                    </a>
-                                    <div class="news-card__content">
-                                        <div class="news-card__date">
-                                            <i data-feather="calendar"></i> 14.05.2020
-                                        </div>
-                                        <a href="#" class="news-card__title">
-                                            Указ Президента: субъекты хозяйствования будут освобождены от налога на имущество и землю до 1 сентября
-                                        </a>
-                                    </div>
-                                </div>
+                    <div class="structure-tree">
+                        <div class="structure-item-hd">
+                            <div class="structure-item ml-auto mr-auto  line-r">
+                                <div class="line-b line-b_long"></div>
+                                Директор
                             </div>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="news-card">
-                                    <a href="#" class="news-card__img" style="background-image: url('./img/news1.jpg')">
+                        </div>
 
-                                    </a>
-                                    <div class="news-card__content">
-                                        <div class="news-card__date">
-                                            <i data-feather="calendar"></i> 14.05.2020
-                                        </div>
-                                        <a href="#" class="news-card__title">
-                                            Указ Президента: субъекты хозяйствования будут освобождены от налога на имущество и землю до 1 сентября
-                                        </a>
-                                    </div>
-                                </div>
+                        <div class="structure-item ml-auto sub-item">
+                            <div class="line-t"></div>
+                            секретарь-делопроизводитель <br>- инспектор по кадром
+                        </div>
+                        <div class="structure-item-row">
+                            <div class="structure-item">
+                                <div class="line-t line-t_short short-left"></div>
+                                отдел координации деятельности <br>
+                                по контролю за наркотиками
                             </div>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="news-card">
-                                    <a href="#" class="news-card__img" style="background-image: url('./img/news1.jpg')">
-
-                                    </a>
-                                    <div class="news-card__content">
-                                        <div class="news-card__date">
-                                            <i data-feather="calendar"></i> 14.05.2020
-                                        </div>
-                                        <a href="#" class="news-card__title">
-                                            Указ Президента: субъекты хозяйствования будут освобождены от налога на имущество и землю до 1 сентября
-                                        </a>
-                                    </div>
-                                </div>
+                            <div class="structure-item">
+                                отдел анализа  и <br>
+                                обработки
+                                информации
                             </div>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="news-card">
-                                    <a href="#" class="news-card__img" style="background-image: url('./img/news1.jpg')">
-
-                                    </a>
-                                    <div class="news-card__content">
-                                        <div class="news-card__date">
-                                            <i data-feather="calendar"></i> 14.05.2020
-                                        </div>
-                                        <a href="#" class="news-card__title">
-                                            Указ Президента: субъекты хозяйствования будут освобождены от налога на имущество и землю до 1 сентября
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="news-card">
-                                    <a href="#" class="news-card__img" style="background-image: url('./img/news1.jpg')">
-
-                                    </a>
-                                    <div class="news-card__content">
-                                        <div class="news-card__date">
-                                            <i data-feather="calendar"></i> 14.05.2020
-                                        </div>
-                                        <a href="#" class="news-card__title">
-                                            Указ Президента: субъекты хозяйствования будут освобождены от налога на имущество и землю до 1 сентября
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="news-card">
-                                    <a href="#" class="news-card__img" style="background-image: url('./img/news1.jpg')">
-
-                                    </a>
-                                    <div class="news-card__content">
-                                        <div class="news-card__date">
-                                            <i data-feather="calendar"></i> 14.05.2020
-                                        </div>
-                                        <a href="#" class="news-card__title">
-                                            Указ Президента: субъекты хозяйствования будут освобождены от налога на имущество и землю до 1 сентября
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="news-card">
-                                    <a href="#" class="news-card__img" style="background-image: url('./img/news1.jpg')">
-
-                                    </a>
-                                    <div class="news-card__content">
-                                        <div class="news-card__date">
-                                            <i data-feather="calendar"></i> 14.05.2020
-                                        </div>
-                                        <a href="#" class="news-card__title">
-                                            Указ Президента: субъекты хозяйствования будут освобождены от налога на имущество и землю до 1 сентября
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="news-card">
-                                    <a href="#" class="news-card__img" style="background-image: url('./img/news1.jpg')">
-
-                                    </a>
-                                    <div class="news-card__content">
-                                        <div class="news-card__date">
-                                            <i data-feather="calendar"></i> 14.05.2020
-                                        </div>
-                                        <a href="#" class="news-card__title">
-                                            Указ Президента: субъекты хозяйствования будут освобождены от налога на имущество и землю до 1 сентября
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="news-card">
-                                    <a href="#" class="news-card__img" style="background-image: url('./img/news1.jpg')">
-
-                                    </a>
-                                    <div class="news-card__content">
-                                        <div class="news-card__date">
-                                            <i data-feather="calendar"></i> 14.05.2020
-                                        </div>
-                                        <a href="#" class="news-card__title">
-                                            Указ Президента: субъекты хозяйствования будут освобождены от налога на имущество и землю до 1 сентября
-                                        </a>
-                                    </div>
-                                </div>
+                            <div class="structure-item">
+                                <div class="line-t line-t_short short-right"></div>
+                                финансово - <br>
+                                хозяйственный отдел
                             </div>
                         </div>
                     </div>
-                    <nav class="pagination-nav" aria-label="Page navigation example">
-                        <ul class="pagination">
-                            <li class="page-item"><a class="page-link" href="#"> <i data-feather="arrow-left"></i>Prev</a></li>
-                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item"><a class="page-link" href="#">4</a></li>
-                            <li class="page-item"><a class="page-link" href="#">Next<i data-feather="arrow-right"></i></a></li>
-                        </ul>
-                    </nav>
+
                 </div>
                 <!-- Right coll end-->
 
@@ -749,6 +622,28 @@
     </div>
 </div>
 <!--Site map Modal end-->
+
+<!--Search block-->
+<div class="modal fade search-modal" id="searchModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="#" class="search-form">
+                    <input type="text" class="form-control" placeholder="Поиск">
+                    <button class="search-action">
+                        <i data-feather="search"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <!--Mobile sidebar menu-->
 <nav id="sidebarMenu" class="slideout-menu">

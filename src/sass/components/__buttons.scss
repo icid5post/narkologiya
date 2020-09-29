@@ -134,11 +134,15 @@ button{
   height: 50px;
   text-align: center;
   color: var(--kit-primary);
-  font-size: 30px;
+  font-size: 44px;
   margin: 0 5px;
   padding: 0;
   transition: all ease 0.3s;
-
+  > span{
+    height: 30px;
+    display: block;
+    line-height: 25px;
+  }
   svg{
     stroke-width: 1;
     width: 30px;

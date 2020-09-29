@@ -33,6 +33,7 @@
   .dropdown-menu{
     margin-top: 20px;
     min-width: 240px;
+    padding: 0;
   }
 
   .dropdown-menu ul{
@@ -46,6 +47,7 @@
 
     > li:last-child .dropdown-item{
       border-bottom: 0;
+      margin-bottom: 0;
     }
   }
 
